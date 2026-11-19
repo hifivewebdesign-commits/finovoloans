@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Services | FINOVO LOANS - Business, Personal, Car, Mortgage & OD/CC</title>
+  <meta name="description" content="Explore loan solutions from FINOVO LOANS: Business Loans, Personal Loans, Used Car Loans, Mortgage Loan Against Property (LAP), and Overdraft / Cash Credit facilities.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .service-detail-section {
+      padding: 70px 0;
+      border-bottom: 1px solid var(--slate-200);
+      scroll-margin-top: 80px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .service-spec-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      width: 100%;
+    }
+    .service-spec-card h4 {
+      font-size: 1.15rem;
+      color: var(--secondary);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .service-nav-strip {
+      background: var(--white);
+      position: sticky;
+      top: 68px;
+      z-index: 900;
+      box-shadow: var(--shadow-sm);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--slate-200);
+      width: 100%;
+      overflow: hidden;
+    }
+    .service-nav-links {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: 4px;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      scrollbar-width: thin;
+      width: 100%;
+    }
+    .service-nav-item {
+      padding: 7px 16px;
+      border-radius: var(--radius-full);
+      background: var(--slate-100);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--slate-700);
+      white-space: nowrap;
+      transition: all var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .service-nav-item:hover {
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+    @media (max-width: 1024px) {
+      .service-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+    @media (max-width: 768px) {
+      .service-detail-section {
+        padding: 48px 0;
+      }
+      .service-spec-card {
+        padding: 22px 16px;
+        border-radius: var(--radius-lg);
+      }
+      .service-nav-strip {
+        top: 60px;
+        padding: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-wrapper">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:8807720744">+91 88077 20744</a>
+        </div>
+        <div class="topbar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:finovoloans@gmail.com">finovoloans@gmail.com</a>
+        </div>
+        <div class="topbar-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>Mon - Sat: 9:30 AM - 7:00 PM</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-social">
+          <a href="https://www.instagram.com/finovo_loans?dmpr=MWxncHg0M2gzbWd3aw==" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/918807720744" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="topbar-item">
+          <a href="partner.html" style="font-weight: 700; color: #fbcfe8;">
+            <i class="fa-solid fa-handshake-angle" style="color: #fbcfe8; margin-right: 4px;"></i> Partner Registration
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Finovo Loans Home">
+        <img src="assets/images/logo-transparent.png" alt="Finovo Loans Logo">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link active">Loan Services</a>
+        <a href="partner.html" class="nav-link">Partner Program</a>
+        <a href="faq.html" class="nav-link">FAQs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:8807720744" class="btn btn-outline-primary btn-sm">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <button class="btn btn-primary btn-sm" data-open-modal>
+          <i class="fa-solid fa-file-invoice-dollar"></i> Apply for Loan
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container page-header-content">
+      <span class="badge-pill">Financial Offerings</span>
+      <h1>Comprehensive Loan Solutions</h1>
+      <p>Customized lending solutions across Business Loans, Personal Loans, Used Car Loans, Mortgage Loan Against Property, and Working Capital limits.</p>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Loan Services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Anchor Navigation Strip -->
+  <div class="service-nav-strip">
+    <div class="container">
+      <div class="service-nav-links">
+        <a href="#business-loan" class="service-nav-item"><i class="fa-solid fa-briefcase"></i> Business Loan</a>
+        <a href="#personal-loan" class="service-nav-item"><i class="fa-solid fa-user-tie"></i> Personal Loan</a>
+        <a href="#used-car-loan" class="service-nav-item"><i class="fa-solid fa-car-side"></i> Used Car Loan</a>
+        <a href="#mortgage-loan" class="service-nav-item"><i class="fa-solid fa-house-chimney"></i> Mortgage Loan (LAP)</a>
+        <a href="#od-cc-facility" class="service-nav-item"><i class="fa-solid fa-money-bill-transfer"></i> OD & CC Facility</a>
+        <a href="#calculator" class="service-nav-item"><i class="fa-solid fa-calculator"></i> EMI Calculator</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1. BUSINESS LOAN -->
+  <section class="service-detail-section" id="business-loan">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div>
+          <span class="section-subtitle">Commercial & MSME Financing</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Business Loans</h2>
+          <p style="font-size: 1.05rem; color: var(--slate-600); margin-bottom: 20px; line-height: 1.7;">
+            Fuel your enterprise growth, invest in new plant & machinery, expand to new branches, or secure working capital liquidity. FINOVO LOANS facilitates unsecured business loans and collateral-backed credit through top banks and NBFCs.
+          </p>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Key Advantages:</h4>
+          <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Collateral-Free Options:</strong> Unsecured loans up to ₹5 Crore based on turnover, bank credits, and financial performance.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>CGTMSE Coverage:</strong> Access government credit guarantee schemes for eligible micro and small businesses.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Flexible Tenure:</strong> Loan terms from 12 months up to 60 months with predictable monthly EMI schedules.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Business Expansion:</strong> Funds can be deployed for raw materials, inventory, vendor payments, or tech upgrades.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal data-loan-type="Business Loan">
+              <i class="fa-solid fa-paper-plane"></i> Apply for Business Loan
+            </button>
+            <a href="faq.html#business-loan-faq" class="btn btn-outline-primary">
+              <i class="fa-solid fa-circle-question"></i> Business Loan FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="service-spec-card">
+          <h4><i class="fa-solid fa-clipboard-check"></i> Eligibility & Documents</h4>
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Eligible Applicants:</strong>
+            <p style="font-size: 0.88rem; color: var(--slate-600); margin-top: 4px;">
+              Sole Proprietorships, Partnerships, LLPs, Private Limited Companies, and Self-Employed Professionals with minimum 1-2 years of operational vintage.
+            </p>
+          </div>
+          <div>
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Required Documents:</strong>
+            <ul style="font-size: 0.88rem; color: var(--slate-600); margin-top: 8px; list-style: disc; margin-left: 20px;">
+              <li>PAN card & Aadhaar of promoters/directors</li>
+              <li>Business registration proof (GST, MSME / Udyam, Shop Act)</li>
+              <li>12 Months current account bank statements</li>
+              <li>Latest 2 to 3 years Income Tax Returns (ITR) with Computation</li>
+              <li>Audited Financial Statements (P&L, Balance Sheet) where applicable</li>
+              <li>GST Returns (GSTR-3B / GSTR-1 for 12 months)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PERSONAL LOAN -->
+  <section class="service-detail-section section-bg-slate" id="personal-loan">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div>
+          <span class="section-subtitle">Quick Unsecured Credit</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Personal Loans</h2>
+          <p style="font-size: 1.05rem; color: var(--slate-600); margin-bottom: 20px; line-height: 1.7;">
+            Personal loans offer rapid, unsecured funds for personal milestones, wedding costs, medical emergencies, home renovation, or debt consolidation. No security or guarantor required.
+          </p>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Key Advantages:</h4>
+          <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Zero Collateral:</strong> No requirement to pledge property, gold, or shares. Completely unsecured.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Rapid Sanction:</strong> Approval decisions often within 24 to 48 hours for applicants with clean documentation.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Flexible Tenure:</strong> Select repayment periods from 12 months up to 60 months (5 years).</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Multi-Bank Eligibility Check:</strong> We compare offers across 40+ lenders to secure the lowest possible interest rate.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal data-loan-type="Personal Loan">
+              <i class="fa-solid fa-paper-plane"></i> Apply for Personal Loan
+            </button>
+            <a href="faq.html#personal-loan-faq" class="btn btn-outline-primary">
+              <i class="fa-solid fa-circle-question"></i> Personal Loan FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="service-spec-card">
+          <h4><i class="fa-solid fa-clipboard-check"></i> Eligibility & Documents</h4>
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Eligible Applicants:</strong>
+            <p style="font-size: 0.88rem; color: var(--slate-600); margin-top: 4px;">
+              Salaried individuals employed in Private, MNC, or Public Sector companies, as well as self-employed professionals with regular verifiable income.
+            </p>
+          </div>
+          <div>
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Required Documents:</strong>
+            <ul style="font-size: 0.88rem; color: var(--slate-600); margin-top: 8px; list-style: disc; margin-left: 20px;">
+              <li>PAN card and Aadhaar card (KYC)</li>
+              <li>Latest 3 months salary slips</li>
+              <li>Latest 6 months salary account bank statements</li>
+              <li>Form 16 or latest ITR acknowledgement</li>
+              <li>Employment ID badge / appointment letter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. USED CAR LOAN -->
+  <section class="service-detail-section" id="used-car-loan">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div>
+          <span class="section-subtitle">Vehicle Financing</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Used Car Loans</h2>
+          <p style="font-size: 1.05rem; color: var(--slate-600); margin-bottom: 20px; line-height: 1.7;">
+            Drive home your dream pre-owned hatchback, premium sedan, or SUV with FINOVO LOANS' convenient used car finance. We facilitate attractive interest rates, high valuation percentages, and seamless RC transfer assistance.
+          </p>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Key Advantages:</h4>
+          <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>High Valuation Funding:</strong> Financing up to 85% - 90% of the vehicle's market valuation.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Older Vehicle Eligibility:</strong> Financing available for cars up to 10 to 12 years of age (subject to lender policy).</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Flexible Tenure:</strong> Loan tenures extending up to 5 to 7 years for comfortable repayment.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Both Salaried & Self-Employed:</strong> Open to business owners, professionals, and salaried employees alike.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal data-loan-type="Used Car Loan">
+              <i class="fa-solid fa-paper-plane"></i> Apply for Used Car Loan
+            </button>
+            <a href="faq.html#used-car-loan-faq" class="btn btn-outline-primary">
+              <i class="fa-solid fa-circle-question"></i> Used Car Loan FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="service-spec-card">
+          <h4><i class="fa-solid fa-clipboard-check"></i> Eligibility & Documents</h4>
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Eligible Applicants:</strong>
+            <p style="font-size: 0.88rem; color: var(--slate-600); margin-top: 4px;">
+              Individual buyers, self-employed persons, and salaried professionals aged 21 to 65 years with stable income proof.
+            </p>
+          </div>
+          <div>
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Required Documents:</strong>
+            <ul style="font-size: 0.88rem; color: var(--slate-600); margin-top: 8px; list-style: disc; margin-left: 20px;">
+              <li>PAN, Aadhaar, and Passport/Voter ID</li>
+              <li>Bank statements for the last 6 months</li>
+              <li>Income proof (Pay slips / ITR records)</li>
+              <li>Vehicle Registration Certificate (RC copy)</li>
+              <li>Valid vehicle insurance copy</li>
+              <li>Lender-authorized vehicle valuation report</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MORTGAGE LOAN / LAP -->
+  <section class="service-detail-section section-bg-slate" id="mortgage-loan">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div>
+          <span class="section-subtitle">Property-Backed Financing</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">Mortgage Loan / Loan Against Property (LAP)</h2>
+          <p style="font-size: 1.05rem; color: var(--slate-600); margin-bottom: 20px; line-height: 1.7;">
+            Unlock the hidden capital locked in your residential, commercial, or industrial real estate. A Mortgage Loan offers high-ticket funding at much lower interest rates and longer repayment tenures than unsecured credit, while allowing you to retain complete ownership and possession.
+          </p>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Key Advantages:</h4>
+          <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Substantial Loan Quantum:</strong> Sanctions ranging from ₹20 Lakhs up to ₹15+ Crore based on property valuation and income.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Long Repayment Tenure:</strong> Tenures up to 15 to 20 years significantly reduce your monthly EMI burden.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Multi-Purpose Usage:</strong> Funds can be utilized for business expansion, child education, commercial purchase, or debt consolidation.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Joint Property Consideration:</strong> Co-owned properties can be pledged subject to legal consent and title verification.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal data-loan-type="Mortgage Loan / LAP">
+              <i class="fa-solid fa-paper-plane"></i> Apply for Mortgage Loan
+            </button>
+            <a href="faq.html#mortgage-loan-faq" class="btn btn-outline-primary">
+              <i class="fa-solid fa-circle-question"></i> Mortgage Loan FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="service-spec-card">
+          <h4><i class="fa-solid fa-clipboard-check"></i> Eligible Properties & Documents</h4>
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Eligible Properties:</strong>
+            <p style="font-size: 0.88rem; color: var(--slate-600); margin-top: 4px;">
+              Self-occupied residential houses, flats/apartments, rented residential properties, approved commercial shops, office buildings, and industrial plots.
+            </p>
+          </div>
+          <div>
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Required Documents:</strong>
+            <ul style="font-size: 0.88rem; color: var(--slate-600); margin-top: 8px; list-style: disc; margin-left: 20px;">
+              <li>Original Title Deed / Sale Deed & Parent Documents</li>
+              <li>Patta / Chitta / Revenue records</li>
+              <li>Approved Building Plan & Completion Certificate</li>
+              <li>Encumbrance Certificate (EC) for 13 to 30 years</li>
+              <li>Latest property tax paid receipts</li>
+              <li>Applicant KYC and 3 years Income Tax Returns (ITR)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. OD & CC FACILITY -->
+  <section class="service-detail-section" id="od-cc-facility">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div>
+          <span class="section-subtitle">Working Capital Credit</span>
+          <h2 style="font-size: 2.3rem; margin-bottom: 16px;">OD & CC Facilities (Overdraft & Cash Credit)</h2>
+          <p style="font-size: 1.05rem; color: var(--slate-600); margin-bottom: 20px; line-height: 1.7;">
+            Overdraft (OD) and Cash Credit (CC) limits are dynamic revolving credit solutions designed to empower businesses, wholesalers, manufacturers, and contractors to bridge cash flow gaps and manage fluctuating operations without taking term loans.
+          </p>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Understanding OD vs CC:</h4>
+          <div class="form-row" style="margin-bottom: 24px;">
+            <div style="background: var(--primary-soft); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--primary-border);">
+              <h5 style="color: var(--primary); font-size: 1rem; margin-bottom: 6px;">OD (Overdraft)</h5>
+              <p style="font-size: 0.85rem; color: var(--slate-700); line-height: 1.5;">
+                Allows account holders to withdraw beyond available balance up to an agreed sanction limit. Backed by financial records, fixed deposits, or collateral.
+              </p>
+            </div>
+            <div style="background: var(--secondary-soft); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--secondary-border);">
+              <h5 style="color: var(--secondary); font-size: 1rem; margin-bottom: 6px;">CC (Cash Credit)</h5>
+              <p style="font-size: 0.85rem; color: var(--slate-700); line-height: 1.5;">
+                Working capital limit primarily determined by the borrower's drawing power calculated from current stock, inventory, and book debts/receivables.
+              </p>
+            </div>
+          </div>
+
+          <h4 style="font-size: 1.15rem; color: var(--secondary); margin-bottom: 12px;">Key Advantages:</h4>
+          <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Interest on Utilized Sum Only:</strong> You do not pay interest on the full sanctioned limit — only on the actual amount utilized daily.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Limit Enhancements:</strong> We assist operating businesses with growing turnover in enhancing their existing OD/CC limits.</span>
+            </li>
+            <li style="display: flex; gap: 10px; align-items: flex-start;">
+              <i class="fa-solid fa-circle-check" style="color: var(--primary); margin-top: 4px;"></i>
+              <span><strong>Annual Renewal:</strong> Facilities are renewed annually based on satisfactory account turnover and business health.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" data-open-modal data-loan-type="OD & CC Facility">
+              <i class="fa-solid fa-paper-plane"></i> Apply for OD / CC Limit
+            </button>
+            <a href="faq.html#od-cc-faq" class="btn btn-outline-primary">
+              <i class="fa-solid fa-circle-question"></i> OD & CC FAQs
+            </a>
+          </div>
+        </div>
+
+        <div class="service-spec-card">
+          <h4><i class="fa-solid fa-clipboard-check"></i> Eligibility & Documents</h4>
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Eligible Applicants:</strong>
+            <p style="font-size: 0.88rem; color: var(--slate-600); margin-top: 4px;">
+              Traders, wholesalers, distributors, manufacturers, contractors, and service companies with regular current account transactions.
+            </p>
+          </div>
+          <div>
+            <strong style="color: var(--slate-800); font-size: 0.95rem;">Required Documents:</strong>
+            <ul style="font-size: 0.88rem; color: var(--slate-600); margin-top: 8px; list-style: disc; margin-left: 20px;">
+              <li>Audited Financial Statements (Last 2 to 3 years)</li>
+              <li>12 Months current account bank statements</li>
+              <li>GST returns (GSTR-1 & GSTR-3B for 12 months)</li>
+              <li>Latest monthly stock and book debt statement</li>
+              <li>List of major buyers, suppliers, and debtor ageing report</li>
+              <li>Existing sanction letters for takeover / limit enhancement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Loan EMI Calculator Section -->
+  <section class="section section-bg-light" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Financial Planning Tool</span>
+        <h2>Calculate Your Loan Installment</h2>
+        <p>Test various combinations of loan amount, interest rate, and repayment tenure before submitting your enquiry.</p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calculator-grid">
+          <div class="calc-sliders-column">
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <label for="calcAmountSlider">Loan Amount</label>
+                <div class="calc-val-box" id="calcAmountDisplay">₹10,00,000</div>
+              </div>
+              <input type="range" class="calc-slider" id="calcAmountSlider" min="100000" max="20000000" step="50000" value="1000000">
+              <div class="calc-range-limits">
+                <span>₹1 Lakh</span>
+                <span>₹2 Crore</span>
+              </div>
+            </div>
+
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <label for="calcTenureSlider">Tenure (Years)</label>
+                <div class="calc-val-box" id="calcTenureDisplay">5 Years (60 Mo)</div>
+              </div>
+              <input type="range" class="calc-slider" id="calcTenureSlider" min="1" max="20" step="1" value="5">
+              <div class="calc-range-limits">
+                <span>1 Year</span>
+                <span>20 Years</span>
+              </div>
+            </div>
+
+            <div class="calc-control-group">
+              <div class="calc-label-row">
+                <label for="calcRateSlider">Interest Rate (% p.a.)</label>
+                <div class="calc-val-box" id="calcRateDisplay">10.5% p.a.</div>
+              </div>
+              <input type="range" class="calc-slider" id="calcRateSlider" min="8.0" max="24.0" step="0.25" value="10.5">
+              <div class="calc-range-limits">
+                <span>8.0%</span>
+                <span>24.0%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-emi-display">
+              <p>Estimated Monthly EMI</p>
+              <h3 id="calcEmiOutput">₹21,494</h3>
+            </div>
+
+            <div class="calc-visual-bar">
+              <div class="principal-segment" id="barPrincipal" style="width: 77%;"></div>
+              <div class="interest-segment" id="barInterest" style="width: 23%;"></div>
+            </div>
+
+            <div class="calc-legend">
+              <span><span class="legend-dot principal"></span> Principal Amount</span>
+              <span><span class="legend-dot interest"></span> Total Interest</span>
+            </div>
+
+            <div class="calc-breakdown-table">
+              <div class="breakdown-row">
+                <span class="label">Principal Amount:</span>
+                <span class="value" id="calcPrincipalOutput">₹10,00,000</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="label">Total Interest:</span>
+                <span class="value" id="calcInterestOutput">₹2,89,634</span>
+              </div>
+              <div class="breakdown-row">
+                <span class="label">Total Outlay:</span>
+                <span class="value" id="calcTotalOutput">₹12,89,634</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" id="applyCalculatedLoanBtn" style="width: 100%;">
+              <i class="fa-solid fa-check-circle"></i> Apply for this Loan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section section-bg-dark" style="padding: 60px 0;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <h2 style="color: #fff; font-size: 2.3rem; margin-bottom: 16px;">Have Specific Loan Requirements?</h2>
+      <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; margin-bottom: 30px;">
+        Speak directly with our loan specialists. We assess your profile, identify suitable lenders, and negotiate favorable terms.
+      </p>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 16px;">
+        <button class="btn btn-primary btn-lg" data-open-modal>
+          <i class="fa-solid fa-file-invoice-dollar"></i> Apply Now
+        </button>
+        <a href="https://wa.me/918807720744?text=Hello%20Finovo%20Loans%2C%20I%20want%20to%20enquire%20about%20a%20loan." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp (8807720744)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="assets/images/logo-transparent.png" alt="Finovo Loans Logo">
+          </div>
+          <p class="footer-about">
+            <strong>FINOVO LOANS</strong> — "The Door to Your Financial Needs". Connecting borrowers with top banks and NBFCs across India for Business, Personal, Car, Mortgage, and OD & CC credit solutions.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/finovo_loans?dmpr=MWxncHg0M2gzbWd3aw==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/918807720744" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:finovoloans@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Loan Services</a></li>
+            <li><a href="partner.html"><i class="fa-solid fa-chevron-right"></i> Partner Program</a></li>
+            <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQs & Doubts</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Loan Products</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#business-loan"><i class="fa-solid fa-chevron-right"></i> Business Loan</a></li>
+            <li><a href="services.html#personal-loan"><i class="fa-solid fa-chevron-right"></i> Personal Loan</a></li>
+            <li><a href="services.html#used-car-loan"><i class="fa-solid fa-chevron-right"></i> Used Car Loan</a></li>
+            <li><a href="services.html#mortgage-loan"><i class="fa-solid fa-chevron-right"></i> Mortgage Loan (LAP)</a></li>
+            <li><a href="services.html#od-cc-facility"><i class="fa-solid fa-chevron-right"></i> OD & CC Facility</a></li>
+            <li><a href="partner.html"><i class="fa-solid fa-chevron-right"></i> Referral Program</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Phone / WhatsApp</p>
+              <a href="tel:8807720744">+91 88077 20744</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Email Address</p>
+              <a href="mailto:finovoloans@gmail.com">finovoloans@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Official Instagram</p>
+              <a href="https://www.instagram.com/finovo_loans?dmpr=MWxncHg0M2gzbWd3aw==" target="_blank" rel="noopener noreferrer">@finovo_loans</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">Operating Hours</p>
+              <span>Monday to Saturday: 9:30 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <strong>Important Disclaimer & Compliance Notice:</strong> FINOVO LOANS is an independent loan facilitation and financial consulting firm. FINOVO LOANS does not directly lend money or guarantee loan approvals. All loan products, interest rates, eligibility requirements, and disbursal timelines are solely governed by the respective lending banks and NBFCs registered with the Reserve Bank of India (RBI). FINOVO LOANS will never demand advance payment or processing fees for guaranteed loan sanctions. Please beware of fraudulent individuals posing as loan agents.
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 FINOVO LOANS. All Rights Reserved. "The Door to Your Financial Needs".</p>
+        <div class="footer-bottom-links">
+          <a href="faq.html#customer-safety">Customer Safety</a>
+          <a href="partner.html">Partner Terms</a>
+          <a href="contact.html">Privacy & Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Popup -->
+  <div class="modal-overlay" id="enquiryModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      <div class="form-header" style="text-align: center; margin-bottom: 20px;">
+        <h3 style="color: var(--secondary); font-size: 1.5rem; margin-bottom: 4px;">Apply for a Loan</h3>
+        <p style="font-size: 0.88rem; color: var(--slate-500);">Submit your details and get instant lender recommendations</p>
+      </div>
+      <form id="modalEnquiryForm">
+        <div class="form-group">
+          <label for="modalName">Full Name *</label>
+          <input type="text" id="modalName" name="name" class="form-control" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="modalPhone">Mobile Number (WhatsApp) *</label>
+          <input type="tel" id="modalPhone" name="phone" class="form-control" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label for="modalLoanType">Loan Type *</label>
+          <select id="modalLoanType" name="loan_type" class="form-control" required>
+            <option value="Business Loan">Business Loan (Unsecured / CGTMSE)</option>
+            <option value="Personal Loan">Personal Loan (Salaried / Self-Employed)</option>
+            <option value="Used Car Loan">Used Car Loan (Pre-Owned Vehicle)</option>
+            <option value="Mortgage Loan / LAP">Mortgage Loan / Loan Against Property</option>
+            <option value="OD & CC Facility">OD & CC (Overdraft / Cash Credit)</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalLoanAmount">Required Amount (₹)</label>
+            <input type="text" id="modalLoanAmount" name="amount" class="form-control" placeholder="e.g. 10,00,000" required>
+          </div>
+          <div class="form-group">
+            <label for="modalCity">City / Location</label>
+            <input type="text" id="modalCity" name="city" class="form-control" placeholder="e.g. Coimbatore" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="modalMessage">Additional Notes (Optional)</label>
+          <textarea id="modalMessage" name="message" class="form-control" rows="2" placeholder="e.g. Salaried in MNC, monthly salary ₹65,000"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-paper-plane"></i> Submit Loan Enquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp & Scroll Top -->
+  <a href="https://wa.me/918807720744?text=Hello%20Finovo%20Loans%2C%20I%20would%20like%20to%20enquire%20about%20loan%20options." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="tooltip">Chat on WhatsApp: 8807720744</span>
+  </a>
+
+  <button class="scroll-to-top" id="scrollTopBtn" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
